@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTLP1J_ADT_23_1.V2.Client", "VTLP1J_ADT_23_1.V2.Client\VTLP1J_ADT_23_1.V2.Client.csproj", "{1CD4AEBE-3182-4598-B9E4-9E813EBF4421}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CD4AEBE-3182-4598-B9E4-9E813EBF4421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD4AEBE-3182-4598-B9E4-9E813EBF4421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD4AEBE-3182-4598-B9E4-9E813EBF4421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD4AEBE-3182-4598-B9E4-9E813EBF4421}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
