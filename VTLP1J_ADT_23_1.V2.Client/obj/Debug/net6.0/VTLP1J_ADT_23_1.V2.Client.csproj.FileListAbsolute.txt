@@ -1,0 +1,15 @@
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.csproj.AssemblyReference.cache
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.GeneratedMSBuildEditorConfig.editorconfig
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.AssemblyInfoInputs.cache
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.AssemblyInfo.cs
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.csproj.CoreCompileInputs.cache
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.deps.json
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.runtimeconfig.json
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.dll
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/ref/VTLP1J_ADT_23_1.V2.Client.dll
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/bin/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.pdb
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.dll
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/ref/VTLP1J_ADT_23_1.V2.Client.dll
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.pdb
+/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_23_1.V2.Client/obj/Debug/net6.0/VTLP1J_ADT_23_1.V2.Client.genruntimeconfig.cache

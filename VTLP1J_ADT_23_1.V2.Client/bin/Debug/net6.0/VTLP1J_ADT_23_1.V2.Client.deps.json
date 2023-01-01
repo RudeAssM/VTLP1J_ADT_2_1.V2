@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "VTLP1J_ADT_23_1.V2.Client/1.0.0": {
+        "runtime": {
+          "VTLP1J_ADT_23_1.V2.Client.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VTLP1J_ADT_23_1.V2.Client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
