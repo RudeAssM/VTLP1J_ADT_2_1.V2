@@ -1051,7 +1051,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.1",
+          "VTLP1J_ADT_2022_23_1.V2.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/VTLP1J_ADT_2022_23_1.V2.Data.dll": {}

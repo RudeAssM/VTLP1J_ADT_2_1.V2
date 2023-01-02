@@ -7,9 +7,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 {
     public class LensMountRepository : Repository<LensMount>, IlensMountRepository
     {
-        public LensMountRepository(LensDatabaseContext ctx) : base(ctx)
-        {
-        }
+        public LensMountRepository(LensDatabaseContext ctx) : base(ctx){}
 
         public override LensMount GetOne(int id)
         {
