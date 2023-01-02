@@ -7,6 +7,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
     [Table("LensMount")]
     public class LensMount
     {
+        
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
@@ -18,8 +19,10 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         [NotMapped] public virtual Manufacturer Manufacturer { get; set; }
         
         [NotMapped] public virtual ILens Lens { get; set; }
-        
-        
-        
+
+        public override string ToString()
+        {
+            return $"{Id}: {Name},{FlangeDistence}";
+        }
     }
 }

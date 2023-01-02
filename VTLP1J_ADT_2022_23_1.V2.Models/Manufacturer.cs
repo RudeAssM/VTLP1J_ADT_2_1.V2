@@ -13,7 +13,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         #region Fields
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public int Id { get; set; }
         
         [Required] public String Name { get; set; }
         
@@ -26,15 +26,12 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         
 
         #endregion
-        
-        
-     
 
         #region methods
 
         public override string ToString()
         {
-            return $"{ID}: {Name} Est.:{Established} in {CountryOfOrigin} ";
+            return $"{Id}: {Name} Est.:{Established} in {CountryOfOrigin} ";
         }
         public Manufacturer()
         {
