@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
@@ -18,16 +19,26 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 
         public void UpdateLensMounts(int id, HashSet<LensMount> lensMounts)
         {
-            var LensMounts = this.GetOne(id).Mounts;
-            if (lensMounts != null)
+            var LenMount = this.GetOne(id).Mounts;
+            if(LenMount != null)
             {
-                
-                foreach (var LenM in LensMounts)
+               throw new Exception("this lens does not exist");
+            }
+            foreach (var mount in LenMount)
+            {
+                if (!lensMounts.Contains(mount))
                 {
-                       
+                    LenMount.Remove(mount);
                 }
             }
-
+            foreach (var mount in lensMounts)
+            {
+                if (!LenMount.Contains(mount))
+                {
+                    LenMount.Add(mount);
+                }
+            }
+            
         }
     }
 }
