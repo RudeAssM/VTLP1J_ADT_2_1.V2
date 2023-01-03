@@ -16,13 +16,13 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 
         public void UpdateManufacturer(int id, Manufacturer manufacturer)
         {
-            var manufact= (this.GetOne(id)).Manufacturer;
-            if (manufacturer != null)
+            Manufacturer manufact = (this.GetOne(id)).Manufacturer;
+            if (manufact == null)
             {
-                manufact = manufacturer;
-                this.Context.SaveChanges();
+                throw new ArgumentNullException(nameof(manufacturer));
             }
-            else { throw new Exception("No lens mount like that."); }
+            this.GetOne(id).Manufacturer = manufacturer;
+            this.Context.SaveChanges();
 
         }
     }

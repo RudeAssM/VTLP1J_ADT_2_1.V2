@@ -20,7 +20,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
         public void UpdateLensMounts(int id, ICollection<LensMount> lensMounts)
         {
             ICollection<LensMount> LenMount = this.GetOne(id).Mounts;
-            if(LenMount != null)
+            if(LenMount == null)
             {
                throw new Exception("this lens does not exist");
             }
@@ -38,7 +38,10 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
                     LenMount.Add(mount);
                 }
             }
-            
+            this.GetOne(id).Mounts = LenMount;
+            this.Context.SaveChanges();
+
+
         }
     }
 }

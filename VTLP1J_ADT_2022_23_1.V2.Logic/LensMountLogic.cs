@@ -1,28 +1,60 @@
 using System.Collections.Generic;
 using VTLP1J_ADT_2022_23_1.V2.Models;
+using VTLP1J_ADT_2022_23_1.V2.Repository;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Logic
 {
     public class LensMountLogic : ILensMountLogic
     {
-        public LensMount AddLensMount(LensMount lensMount)
+        private IlensMountRepository _lensMountRepository;
+        
+        public LensMountLogic(IlensMountRepository lensMountRepository)
         {
-            throw new System.NotImplementedException();
+            _lensMountRepository = lensMountRepository;
+        }
+
+        public void AddLensMount(LensMount lensMount)
+        {
+            if (lensMount == null)
+            {
+                
+                throw new System.ArgumentNullException(nameof(lensMount));
+            }
+            this._lensMountRepository.Add(lensMount);
         }
 
         public LensMount GetLensMount(int id)
         {
-            throw new System.NotImplementedException();
+            LensMount lensMount = this._lensMountRepository.GetOne(id);
+            if (lensMount == null)
+            {
+                throw new System.ArgumentNullException(nameof(lensMount));
+            }
+
+            return lensMount;
+
         }
 
         public void deleteLensMount(int id)
         {
-            throw new System.NotImplementedException();
+            LensMount lensMount = this._lensMountRepository.GetOne(id);
+            if (lensMount == null)
+            {
+                throw new System.ArgumentNullException(nameof(lensMount));
+            }
+            this._lensMountRepository.Delete(lensMount);
         }
 
         public IEnumerable<LensMount> GetAllLensMounts()
         {
-            throw new System.NotImplementedException();
+            
+            return this._lensMountRepository.GetAll();
+            
+        }
+
+        public void UpdateLensMountManufacturer(int id, Manufacturer manufacturer)
+        {
+            this._lensMountRepository.UpdateManufacturer(id, manufacturer);
         }
     }
 }

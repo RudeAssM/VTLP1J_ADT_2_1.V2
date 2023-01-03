@@ -19,12 +19,13 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
         public void UpdateName(int id, string name)
         {
             var manufacturer = this.GetOne(id);
-            if (manufacturer != null)
+            if (manufacturer == null)
             {
-                manufacturer.Name = name;
-                this.Context.SaveChanges();
+                throw new Exception("No Manufacturer with that name.");
+               
             }
-            else { throw new Exception("No Manufacturer with that name."); }
+            this.GetOne(id).Name = name;
+            this.Context.SaveChanges();
         }
     }
 }
