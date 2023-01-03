@@ -6,6 +6,6 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 {
     public interface ILensRepository : IRepository<ILens>
     {
-        void UpdateLensMounts(int id, HashSet<LensMount> lensMounts);
+        void UpdateLensMounts(int id, ICollection<LensMount> lensMounts);
     }
 }

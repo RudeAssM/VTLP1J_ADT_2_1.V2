@@ -17,21 +17,21 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
             return this.GetAll().SingleOrDefault(lens => lens.Id == id);
         }
 
-        public void UpdateLensMounts(int id, HashSet<LensMount> lensMounts)
+        public void UpdateLensMounts(int id, ICollection<LensMount> lensMounts)
         {
-            var LenMount = this.GetOne(id).Mounts;
+            ICollection<LensMount> LenMount = this.GetOne(id).Mounts;
             if(LenMount != null)
             {
                throw new Exception("this lens does not exist");
             }
-            foreach (var mount in LenMount)
+            foreach (LensMount mount in LenMount)
             {
                 if (!lensMounts.Contains(mount))
                 {
                     LenMount.Remove(mount);
                 }
             }
-            foreach (var mount in lensMounts)
+            foreach (LensMount mount in lensMounts)
             {
                 if (!LenMount.Contains(mount))
                 {
