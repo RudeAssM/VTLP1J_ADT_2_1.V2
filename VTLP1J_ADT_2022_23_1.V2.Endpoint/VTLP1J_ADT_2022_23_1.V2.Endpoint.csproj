@@ -7,4 +7,8 @@
 
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\VTLP1J_ADT_2022_23_1.V2.Logic\VTLP1J_ADT_2022_23_1.V2.Logic.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -6,9 +6,9 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
 {
     public class LensMountLogic : ILensMountLogic
     {
-        private IlensMountRepository _lensMountRepository;
+        private ILensMountRepository _lensMountRepository;
         
-        public LensMountLogic(IlensMountRepository lensMountRepository)
+        public LensMountLogic(ILensMountRepository lensMountRepository)
         {
             _lensMountRepository = lensMountRepository;
         }
