@@ -13,11 +13,11 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [Required]
-        public int MinFocalLength { get; set; }
+        public int FocalLengthMin { get; set; }
         [Required]
-        public int MaxFocalLength { get; set; }
+        public int FocalLengthMax { get; set; }
         [Required]
-        public int FStopLowest { get; set; }
+        public double Aperture { get; set; }
         [Required]
         public int FilterSize { get; set; }
         [NotMapped]
@@ -35,7 +35,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
 
         public override string ToString()
         {
-            return $"{Id}: {MinFocalLength}-{MaxFocalLength}mm, f/{FStopLowest}, filter size,{FilterSize}mm";
+            return $"{Id}: {FocalLengthMin}-{FocalLengthMax}mm, f/{Aperture}, filter size,{FilterSize}mm";
         }
     }
 }

@@ -13,7 +13,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         [Required]
         public int FocalLength { get; set; }
         [Required]
-        public int FStopLowest { get; set; }
+        public double Aperture { get; set; }
         [Required]
         public int FilterSize { get; set; }
         [NotMapped]
@@ -31,7 +31,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
 
         public override string ToString()
         {
-            return $"{Id}: {FocalLength}mm, f/{FStopLowest}, filter size,{FilterSize}mm";
+            return $"{Id}: {FocalLength}mm, f/{Aperture}, filter size,{FilterSize}mm";
         }
         
         

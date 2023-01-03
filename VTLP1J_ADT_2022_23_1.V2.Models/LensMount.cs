@@ -14,12 +14,12 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         
         [Required] public String Name { get; set; }
 
-        [Required] public int FlangeDistence { get; set; }
+        [Required] public double FlangeDistence { get; set; }
         
         [NotMapped] public virtual Manufacturer Manufacturer { get; set; }
-        
-        [NotMapped] public virtual ILens Lens { get; set; }
-
+            
+        [ForeignKey(nameof(Manufacturer))]
+        public int ManufacturerId { get; set; }
         public override string ToString()
         {
             return $"{Id}: {Name},{FlangeDistence}";

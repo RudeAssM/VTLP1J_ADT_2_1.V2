@@ -22,8 +22,9 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         [Required] public String CountryOfOrigin { get; set; }
         
         [NotMapped] public virtual ICollection<ILens> Lenses { get; set; }
-
         
+        [NotMapped] public virtual ICollection<LensMount> LensMounts { get; set; }
+
 
         #endregion
 
