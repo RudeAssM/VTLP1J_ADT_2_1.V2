@@ -1,11 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "+0ZCXT/i0NrmSVTj+diETl4MVYWvKLpq7647C1QMTVMivzffMW8saB1IkZ8AEmSIfIts8FTR5tZMxU6y1mbJ4w==",
+  "dgSpecHash": "eeUc4Es64bT3ZYp73b3bQ3J9KAY0S0PwOG7GTU5aG4Ce76wHv5ebkSZslJMi+sf/dEua+LHKcDqEB/FuBjxi9A==",
   "success": true,
   "projectFilePath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Endpoint/VTLP1J_ADT_2022_23_1.V2.Endpoint.csproj",
   "expectedPackageFiles": [
     "/home/rudasm/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/home/rudasm/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools/1.1.1/consoletools.1.1.1.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools.controls/1.1.0/consoletools.controls.1.1.0.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools.controls.menus/1.1.0/consoletools.controls.menus.1.1.0.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools.controls.spinners/1.1.0/consoletools.controls.spinners.1.1.0.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools.controls.tables/1.1.0/consoletools.controls.tables.1.1.0.nupkg.sha512",
+    "/home/rudasm/.nuget/packages/consoletools.core/1.1.0/consoletools.core.1.1.0.nupkg.sha512",
     "/home/rudasm/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/rudasm/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/home/rudasm/.nuget/packages/microsoft.data.sqlclient/5.0.1/microsoft.data.sqlclient.5.0.1.nupkg.sha512",

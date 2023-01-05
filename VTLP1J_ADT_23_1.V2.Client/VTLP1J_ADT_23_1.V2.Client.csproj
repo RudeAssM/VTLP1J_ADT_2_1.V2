@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ConsoleTools" Version="1.1.1" />
+      <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
+    </ItemGroup>
+
 </Project>
