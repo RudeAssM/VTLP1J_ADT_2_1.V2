@@ -43,7 +43,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
                 .AllowCredentials()
                 .AllowAnyMethod()
                 .AllowAnyHeader()
-                .WithOrigins("http://localhost:696969")
+                .WithOrigins("http://localhost:4200")
             );
             app.UseRouting();
             app.UseAuthorization();

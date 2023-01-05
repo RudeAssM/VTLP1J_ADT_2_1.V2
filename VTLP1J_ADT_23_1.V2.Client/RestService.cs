@@ -7,13 +7,13 @@ namespace VTLP1J_ADT_23_1_V2.Client
     internal class RestService
     {
         HttpClient client;
-        
-        public RestService( String URL)
+
+        public RestService(String URL)
         {
-                
+            Init(URL);
         }
 
-        private void Init(String URL)
+        private  void Init(String URL)
         {
             client = new HttpClient();
             client.MaxResponseContentBufferSize = 256000;
@@ -23,7 +23,7 @@ namespace VTLP1J_ADT_23_1_V2.Client
                 .Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
             try
             {
-                client.GetAsync("").GetAwaiter().GetResult();
+                client.GetAsync(new Uri(URL)).GetAwaiter().GetResult();
             }
             catch (HttpRequestException e)
             {

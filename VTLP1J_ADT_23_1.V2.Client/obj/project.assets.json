@@ -1676,6 +1676,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "VTLP1J_ADT_2022_23_1.V2.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/VTLP1J_ADT_2022_23_1.V2.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VTLP1J_ADT_2022_23_1.V2.Models.dll": {}
+        }
       }
     }
   },
@@ -5603,12 +5613,18 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "VTLP1J_ADT_2022_23_1.V2.Models/1.0.0": {
+      "type": "project",
+      "path": "../VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj",
+      "msbuildProject": "../VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "ConsoleTools >= 1.1.1",
-      "Microsoft.AspNet.WebApi.Client >= 5.2.9"
+      "Microsoft.AspNet.WebApi.Client >= 5.2.9",
+      "VTLP1J_ADT_2022_23_1.V2.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5635,7 +5651,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
+              "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

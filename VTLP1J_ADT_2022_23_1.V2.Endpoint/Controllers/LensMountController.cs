@@ -9,7 +9,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
 {
     public class LensMountController
     {
-        [Microsoft.AspNetCore.Components.Route("[controller]")]
+        [Route("[controller]")]
         [ApiController]
         public class LensMountControllers : ControllerBase
         {
