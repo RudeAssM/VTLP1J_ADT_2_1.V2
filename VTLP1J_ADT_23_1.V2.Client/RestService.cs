@@ -8,12 +8,12 @@ namespace VTLP1J_ADT_23_1_V2.Client
     {
         HttpClient client;
 
-        public RestService(String URL)
+        public RestService(string URL)
         {
             Init(URL);
         }
 
-        private  void Init(String URL)
+        private  void Init(string URL)
         {
             client = new HttpClient();
             client.MaxResponseContentBufferSize = 256000;
@@ -23,7 +23,7 @@ namespace VTLP1J_ADT_23_1_V2.Client
                 .Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
             try
             {
-                client.GetAsync(new Uri(URL)).GetAwaiter().GetResult();
+                client.GetAsync("").GetAwaiter().GetResult();
             }
             catch (HttpRequestException e)
             {
