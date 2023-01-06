@@ -4,17 +4,17 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Services
 {
-    public class SignalR : Hub
+    public class SignalHub : Hub
     {
         public override Task OnConnectedAsync()
         {
-            Clients.Caller.SendAsync("connected",Context.ConnectionId);
+            Clients.Caller.SendAsync("Connected",Context.ConnectionId);
             return base.OnConnectedAsync();
         }
         
         public override Task OnDisconnectedAsync(Exception exception)
         {
-            Clients.Caller.SendAsync("disconnected",Context.ConnectionId);
+            Clients.Caller.SendAsync("Disconnected",Context.ConnectionId);
             return base.OnDisconnectedAsync(exception);
         }
     }
