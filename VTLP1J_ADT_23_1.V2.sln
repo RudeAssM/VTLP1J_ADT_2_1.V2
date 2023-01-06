@@ -47,9 +47,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{33DDBE99-4308-4FAF-9D5D-3777E3457E7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "other", "other", "{F3ECCE0B-A954-4FF5-9A22-B7CD87C1E0A2}"
-	ProjectSection(SolutionItems) = preProject
-		gitignore = gitignore
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

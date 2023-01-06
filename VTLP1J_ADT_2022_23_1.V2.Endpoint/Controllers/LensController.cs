@@ -10,17 +10,19 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
     
         [Route("api/[controller]")]
         [ApiController]
-        public class LensControllers : ControllerBase
+        public class LensController : ControllerBase
         {
             private ILensLogic IL;
             IHubContext<SignalHub> hubContext;
             
-            public LensControllers(ILensLogic IL, IHubContext<SignalHub> hubContext)
+            public LensController(ILensLogic IL, IHubContext<SignalHub> hubContext)
             {
                 this.IL = IL;
                 this.hubContext = hubContext;
             }
 
+            
+            //GET: api/Lens
             [HttpGet]
             public IEnumerable<ILens> Get()
             {
