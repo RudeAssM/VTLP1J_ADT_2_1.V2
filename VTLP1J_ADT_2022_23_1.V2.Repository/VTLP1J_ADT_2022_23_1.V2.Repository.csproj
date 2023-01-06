@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\VTLP1J_ADT_2022_23_1.V2.Data\VTLP1J_ADT_2022_23_1.V2.Data.csproj" />
+      <ProjectReference Include="..\VTLP1J_ADT_2022_23_1.V2.Models\VTLP1J_ADT_2022_23_1.V2.Models.csproj" />
+    </ItemGroup>
+
 </Project>

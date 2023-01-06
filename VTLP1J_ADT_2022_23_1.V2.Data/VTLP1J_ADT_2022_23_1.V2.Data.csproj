@@ -7,4 +7,13 @@
 
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="ConsoleTools" Version="1.1.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\VTLP1J_ADT_2022_23_1.V2.Models\VTLP1J_ADT_2022_23_1.V2.Models.csproj" />
+    </ItemGroup>
+
 </Project>
