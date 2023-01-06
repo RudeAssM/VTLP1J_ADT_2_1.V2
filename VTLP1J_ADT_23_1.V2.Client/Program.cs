@@ -9,7 +9,7 @@ namespace VTLP1J_ADT_23_1_V2.Client
     {
         public static void Main(String[] args)
         {
-            RestService restService = new RestService("https://localhost:5000");
+            RestService restService = new RestService("http://localhost:5000");
             
             GetAllLenses(restService);
 

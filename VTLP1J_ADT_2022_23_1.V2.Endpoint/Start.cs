@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using VTLP1J_ADT_2022_23_1.V2.Data;
 using VTLP1J_ADT_2022_23_1.V2.Endpoint.Services;
@@ -26,9 +28,18 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
             services.AddTransient<ILensRepository, LensRepository>();
             services.AddTransient<ILensMountRepository, LensMountRepository>();
 
-            services.AddTransient<LensDatabaseContext,LensDatabaseContext>();
+            services.AddScoped<LensDatabaseContext,LensDatabaseContext>();
             services.AddSignalR();
-
+            
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
+            
+            
             
         }
         
