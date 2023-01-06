@@ -12,17 +12,13 @@ namespace VTLP1J_ADT_23_1_V2.Client
         {
             RestService restService = new RestService("http://localhost:5000");
 
-            ICollection<ILens> Lenses = restService.Get<ILens>("api/Lens");
+            restService.Get<Lens>("api/Lens").ToProcess("this");
 
-            foreach (ILens lens in Lenses)
-            {
-                Console.WriteLine(lens.ToString());
-            }
         }
         public static void GetAllLenses(RestService restService)
         {
-            var Lenses = restService.Get<ILens>("Lenses");
-            foreach (ILens lense in Lenses)
+            var Lenses = restService.Get<Lens>("Lenses");
+            foreach (Lens lense in Lenses)
             {
                 Console.WriteLine(lense.ToString());
             }

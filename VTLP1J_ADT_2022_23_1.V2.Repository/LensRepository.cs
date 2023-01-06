@@ -7,14 +7,14 @@ using VTLP1J_ADT_2022_23_1.V2.Models;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Repository
 {
-    public class LensRepository : Repository<ILens>, ILensRepository{
+    public class LensRepository : Repository<Lens>, ILensRepository{
         public LensRepository(LensDatabaseContext ctx) : base(ctx)
         {
         }
-
-        public override ILens GetOne(int id)
+ 
+        public override Lens GetOne(int id)
         {
-            return this.GetAll().SingleOrDefault(lens => lens.Id == id);
+            return this.GetAll().SingleOrDefault(lens => lens.LensId == id);
         }
 
         public void UpdateLensMounts(int id, ICollection<LensMount> lensMounts)

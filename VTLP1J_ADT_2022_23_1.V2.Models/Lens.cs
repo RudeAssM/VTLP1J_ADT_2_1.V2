@@ -2,40 +2,42 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Metadata;
+using System.Text.Json.Serialization;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Models
 {
-    [Table("VarFocLens")]
-    public class VariableFocalLengthLens : ILens
+    [Table("Lenses")]
+    public class Lens
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int LensId { get; set; }
         [Required]
-        public int FocalLengthMin { get; set; }
-        [Required]
-        public int FocalLengthMax { get; set; }
+        public int FocalLength { get; set; }
         [Required]
         public double Aperture { get; set; }
         [Required]
         public int FilterSize { get; set; }
         [NotMapped]
-        public virtual ICollection<LensMount> Mounts { get; set; }
+        public  ICollection<LensMount> Mounts { get; set; }
         [NotMapped]
+        [JsonIgnore]
         public virtual Manufacturer Manufacturer { get; set; }
         
         [ForeignKey(nameof(Manufacturer))]
-        public int? ManufacturerId { get; set; }
-        
-        public VariableFocalLengthLens()
+        public int ManufacturerId { get; set; }
+
+        public Lens()
         {
             this.Mounts = new HashSet<LensMount>();
         }
 
         public override string ToString()
         {
-            return $"{Id}: {FocalLengthMin}-{FocalLengthMax}mm, f/{Aperture}, filter size,{FilterSize}mm";
+            return $"{LensId}: {FocalLength}mm, f/{Aperture}, filter size,{FilterSize}mm";
         }
+        
+        
+
     }
 }

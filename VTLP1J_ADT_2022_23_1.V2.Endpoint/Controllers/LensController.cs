@@ -24,20 +24,20 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
             
             //GET: api/Lens
             [HttpGet]
-            public IEnumerable<ILens> Get()
+            public IEnumerable<Lens> Get()
             {
                 return IL.GetAllLenses();
             }
 
             [HttpGet("{id}")]
-            public ILens Get(int id)
+            public Lens Get(int id)
             {
                 return IL.GetLens(id);
 
             }
             
             [HttpPost]
-            public void Post([FromBody] ILens lens)
+            public void Post([FromBody] Lens lens)
             {
                 IL.AddNewLens(lens);
                 this.hubContext.Clients.All.SendAsync("Lens Added", lens);

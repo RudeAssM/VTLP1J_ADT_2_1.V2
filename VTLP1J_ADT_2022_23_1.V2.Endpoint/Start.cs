@@ -19,7 +19,6 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddAuthorization();
             services.AddAuthentication();
 
@@ -33,22 +32,8 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
 
             services.AddScoped<LensDatabaseContext,LensDatabaseContext>();
             services.AddSignalR();
-            
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder.AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
-            });
-            
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "VTLP1J_ADT_2022_23_1.V2.Endpoint", Version = "v1" });
-            });
-            
-            
-            
+            services.AddControllers();
+
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -56,29 +41,16 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "VTLP1J_ADT_2022_23_1.V2.Endpoint v1"));
             }
-
-            app.UseCors(Cors => Cors
-                .AllowCredentials()
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .WithOrigins("http://localhost:14353")
-            );
             app.UseRouting();
-            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
+                
                 endpoints.MapControllers();
                 endpoints.MapHub<SignalHub>("/hub");
             });
             
         }
-        
-        public void ConfigureDevelopmentServices(IServiceCollection services)
-        {
-            ConfigureServices(services);
-        }
+
     }
 }

@@ -52,7 +52,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
 
         public void UpdateManufacturer(Manufacturer manufacturer)
         {
-            _manufacturerRepository.UpdateName(manufacturer.Id, manufacturer.Name);
+            _manufacturerRepository.UpdateName(manufacturer.ManufacturerId, manufacturer.Name);
         }
 
         public IEnumerable<Manufacturer> GetManufacturersByCountry(string country)

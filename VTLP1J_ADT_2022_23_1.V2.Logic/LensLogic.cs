@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using VTLP1J_ADT_2022_23_1.V2.Models;
 using VTLP1J_ADT_2022_23_1.V2.Repository;
 
@@ -13,7 +15,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
         {
             _lensRepository = lensRepository;
         }
-        public void AddNewLens(ILens lens)
+        public void AddNewLens(Lens lens)
         {
             if (lens == null)
             {
@@ -22,9 +24,9 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
             _lensRepository.Add(lens);
         }
 
-        public ILens GetLens(int id)
+        public Lens GetLens(int id)
         {
-            ILens lens = _lensRepository.GetOne(id);
+            Lens lens = _lensRepository.GetOne(id);
             if (lens == null)
             {
                 throw new System.ArgumentNullException(nameof(lens));
@@ -34,7 +36,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
 
         public void deleteLens(int id)
         {
-            ILens lens = _lensRepository.GetOne(id);
+            Lens lens = _lensRepository.GetOne(id);
             if (lens == null)
             {
                 throw new System.ArgumentNullException(nameof(lens));
@@ -42,7 +44,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Logic
             _lensRepository.Delete(lens);
         }
 
-        public IEnumerable<ILens> GetAllLenses()
+        public IEnumerable<Lens> GetAllLenses()
         {
            return _lensRepository.GetAll();
         }

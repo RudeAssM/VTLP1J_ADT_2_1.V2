@@ -13,7 +13,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 
         public override Manufacturer GetOne(int id)
         {
-            return this.GetAll().SingleOrDefault(manufacturer => manufacturer.Id == id);
+            return this.GetAll().SingleOrDefault(manufacturer => manufacturer.ManufacturerId == id);
         }
 
         public void UpdateName(int id, string name)

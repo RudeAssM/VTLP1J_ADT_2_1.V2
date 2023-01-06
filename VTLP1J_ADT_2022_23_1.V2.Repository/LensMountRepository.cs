@@ -11,7 +11,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Repository
 
         public override LensMount GetOne(int id)
         {
-            return this.GetAll().SingleOrDefault(mount => mount.Id == id);
+            return this.GetAll().SingleOrDefault(mount => mount.LensMountId == id);
         }
 
         public void UpdateManufacturer(int id, Manufacturer manufacturer)

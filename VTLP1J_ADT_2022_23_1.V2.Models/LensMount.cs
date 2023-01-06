@@ -4,13 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Models
 {
-    [Table("LensMount")]
+    [Table("LensMounts")]
     public class LensMount
     {
         
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int LensMountId { get; set; }
         
         [Required] public String Name { get; set; }
 
@@ -22,7 +22,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         public int ManufacturerId { get; set; }
         public override string ToString()
         {
-            return $"{Id}: {Name},{FlangeDistence}";
+            return $"{LensMountId}: {Name},{FlangeDistence}";
         }
     }
 }
