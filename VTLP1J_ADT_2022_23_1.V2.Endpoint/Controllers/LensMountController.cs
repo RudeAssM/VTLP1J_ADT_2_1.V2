@@ -7,16 +7,15 @@ using VTLP1J_ADT_2022_23_1.V2.Models;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
 {
-    public class LensMountController
-    {
-        [Route("[controller]")]
+   
+        [Route("api/[controller]")]
         [ApiController]
         public class LensMountControllers : ControllerBase
         {
             private ILensMountLogic LML;
-            private IHubContext<SignalR> hub;
+            private IHubContext<SignalHub> hub;
             
-            public LensMountControllers(ILensMountLogic LML, IHubContext<SignalR> hub)
+            public LensMountControllers(ILensMountLogic LML, IHubContext<SignalHub> hub)
             {
                 this.LML = LML;
                 this.hub = hub;
@@ -49,4 +48,3 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
             }
         }
     }
-}

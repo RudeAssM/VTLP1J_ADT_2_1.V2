@@ -10,9 +10,9 @@
   "profiles": {
     
     "IIS Express": {
-      "launchUrl": "swagger",
       "commandName": "IISExpress",
       "launchBrowser": true,
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
@@ -20,6 +20,7 @@
     "VTLP1J_ADT_2022_23_1.V2.Endpoint": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
+      "launchUrl": "Lens",
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {

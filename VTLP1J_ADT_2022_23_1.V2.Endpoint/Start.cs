@@ -2,12 +2,15 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using VTLP1J_ADT_2022_23_1.V2.Data;
 using VTLP1J_ADT_2022_23_1.V2.Endpoint.Services;
 using VTLP1J_ADT_2022_23_1.V2.Logic;
 using VTLP1J_ADT_2022_23_1.V2.Repository;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
+
 
 namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
 {
@@ -39,6 +42,11 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
                         .AllowAnyHeader());
             });
             
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "VTLP1J_ADT_2022_23_1.V2.Endpoint", Version = "v1" });
+            });
+            
             
             
         }
@@ -48,8 +56,10 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "VTLP1J_ADT_2022_23_1.V2.Endpoint v1"));
             }
-            
+
             app.UseCors(Cors => Cors
                 .AllowCredentials()
                 .AllowAnyMethod()
@@ -61,9 +71,14 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<SignalR>("/hub");
+                endpoints.MapHub<SignalHub>("/hub");
             });
             
+        }
+        
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            ConfigureServices(services);
         }
     }
 }

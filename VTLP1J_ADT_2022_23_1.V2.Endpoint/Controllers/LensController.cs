@@ -7,16 +7,15 @@ using VTLP1J_ADT_2022_23_1.V2.Models;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
 {
-    public class LensController
-    {
-        [Route("[controller]")]
+    
+        [Route("api/[controller]")]
         [ApiController]
         public class LensControllers : ControllerBase
         {
             private ILensLogic IL;
-            IHubContext<SignalR> hubContext;
+            IHubContext<SignalHub> hubContext;
             
-            public LensControllers(ILensLogic IL, IHubContext<SignalR> hubContext)
+            public LensControllers(ILensLogic IL, IHubContext<SignalHub> hubContext)
             {
                 this.IL = IL;
                 this.hubContext = hubContext;
@@ -25,9 +24,9 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
             [HttpGet]
             public IEnumerable<ILens> Get()
             {
-                return IL.GetAllLenses()
-                    ;
+                return IL.GetAllLenses();
             }
+
             [HttpGet("{id}")]
             public ILens Get(int id)
             {
@@ -43,10 +42,10 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
             }
             
             [HttpPut]
-            public void Put([FromBody] int Id, ICollection<LensMount> LenM)
+            public void Put([FromBody] LensMountUpdaterLogic lensMountUpdaterLogic)
             {
-                IL.UpdateLensMount(Id, LenM);
-                this.hubContext.Clients.All.SendAsync("Lens Updated", Id, LenM);
+                IL.UpdateLensMount(lensMountUpdaterLogic.id_target, lensMountUpdaterLogic.lensMounts);
+                this.hubContext.Clients.All.SendAsync("Lens Updated", lensMountUpdaterLogic.id_target, lensMountUpdaterLogic.lensMounts);
             }
             
             [HttpDelete("{id}")]
@@ -57,4 +56,3 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
             }
         }
     }
-}

@@ -37,7 +37,6 @@ namespace VTLP1J_ADT_23_1_V2.Client
             HttpResponseMessage message = client.GetAsync(endpoint).GetAwaiter().GetResult();
 
             message.EnsureSuccessStatusCode();
-            
             items = message.Content.ReadAsAsync<List<T>>().GetAwaiter().GetResult();
             return items;
         }   

@@ -7,16 +7,14 @@ using VTLP1J_ADT_2022_23_1.V2.Models;
 
 namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
 {
-    public class ManufacturerController
-    {
-        [Route("[controller]")]
+        [Route("api/[controller]")]
         [ApiController]
         public class ManufacturerControllers : ControllerBase
         {
             IManufacturerLogic ML;
-            private IHubContext<SignalR> hub;
+            private IHubContext<SignalHub> hub;
        
-            public ManufacturerControllers(IManufacturerLogic ML, IHubContext<SignalR> hub)
+            public ManufacturerControllers(IManufacturerLogic ML, IHubContext<SignalHub> hub)
             {
                 this.ML = ML;
                 this.hub = hub; 
@@ -51,4 +49,3 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
         }
         
     }
-}
