@@ -74,7 +74,6 @@ namespace VTLP1J_ADT_2022_23_1.V2.Test
             
         }
         
-        
         [Test]
         public void GetOneLensCorrectInstance()
         {
