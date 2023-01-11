@@ -32,7 +32,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Data
             {
                optionsBuilder
                    .UseLazyLoadingProxies()
-                   .UseInMemoryDatabase("LensDatabase");
+                      .UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=LensDatabase.mdf;Trusted_Connection=True;");
             }
         }
 
@@ -42,54 +42,54 @@ namespace VTLP1J_ADT_2022_23_1.V2.Data
             
 
             #region Manufacturers
-
+            
             int ManufacturerId = 0;
             Manufacturer Canon = new Manufacturer(){ ManufacturerId = ManufacturerId++,
                 Name = "Canon",
                 CountryOfOrigin = "Japan",
-                Established = new DateOnly(1937,08,10)};
+                Established = new DateTime(1937,08,10)};
             Canon.Lenses = new List<Lens>();
             
             Manufacturer Nikon = new Manufacturer(){ ManufacturerId = ManufacturerId++,
                 Name = "Nikon",
                 CountryOfOrigin = "Japan",
-                Established = new DateOnly(1917,07,25)};
+                Established = new DateTime(1917,07,25)};
             Nikon.Lenses = new List<Lens>();
             
             Manufacturer Sigma = new Manufacturer(){ ManufacturerId = ManufacturerId++,
                 Name = "Sigma",
                 CountryOfOrigin = "Japan",
-                Established = new DateOnly(1961,09,01)};
+                Established = new DateTime(1961,09,01)};
             Sigma.Lenses = new List<Lens>();   
             
             Manufacturer Tamron = new Manufacturer(){ ManufacturerId = ManufacturerId++,
                 Name = "Tamron",
                 CountryOfOrigin = "Japan",
-                Established = new DateOnly(1950,01,01)};
+                Established = new DateTime(1950,01,01)};
             Tamron.Lenses = new List<Lens>();
             
             Manufacturer Tokina = new Manufacturer(){ ManufacturerId = ManufacturerId++,
                 Name = "Tokina",
                 CountryOfOrigin = "Japan",
-                Established = new DateOnly(1950,01,01)};
+                Established = new DateTime(1950,01,01)};
             Tokina.Lenses = new List<Lens>();
             
             Manufacturer Leica = new Manufacturer() {  ManufacturerId = ManufacturerId++,
                 Name = "Leica",
                 CountryOfOrigin = "Germany",
-                Established = new DateOnly(1913, 01, 01)};
+                Established = new DateTime(1913, 01, 01)};
             Leica.Lenses = new List<Lens>();
             
             Manufacturer Zeiss = new Manufacturer() {  ManufacturerId = ManufacturerId++,
                 Name = "Zeiss",
                 CountryOfOrigin = "Germany",
-                Established = new DateOnly(1846, 01, 01)};
+                Established = new DateTime(1846, 01, 01)};
             Zeiss.Lenses = new List<Lens>();
             
             Manufacturer FED = new Manufacturer() {  ManufacturerId = ManufacturerId++,
                 Name = "FED",
                 CountryOfOrigin = "Russia",
-                Established = new DateOnly(1932, 01, 01)};
+                Established = new DateTime(1932, 01, 01)};
             FED.Lenses = new List<Lens>();
             #endregion
 
@@ -99,55 +99,55 @@ namespace VTLP1J_ADT_2022_23_1.V2.Data
 
             LensMount EF = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "EF", 
-                Manufacturer = Canon, 
+                ManufacturerId = Canon.ManufacturerId, 
                 FlangeDistence = 44};
             LensMount EF_S = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "EF-S", 
-                Manufacturer = Canon, 
+                ManufacturerId = Canon.ManufacturerId, 
                 FlangeDistence = 44};
             LensMount EF_M = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "EF-M", 
-                Manufacturer = Canon, 
+                ManufacturerId = Canon.ManufacturerId, 
                 FlangeDistence = 18};
             LensMount RF = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "RF", 
-                Manufacturer = Canon, 
+                ManufacturerId = Canon.ManufacturerId, 
                 FlangeDistence = 20};
             LensMount FD = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "FD", 
-                Manufacturer = Canon, 
+                ManufacturerId = Canon.ManufacturerId, 
                 FlangeDistence = 42};
             LensMount F = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "F", 
-                Manufacturer = Nikon, 
+                ManufacturerId = Nikon.ManufacturerId, 
                 FlangeDistence = 46};
             LensMount Z = new LensMount() { LensMountId = LensMountIDCounter++,
                 Name = "Z",
-                Manufacturer = Nikon, 
+                ManufacturerId = Nikon.ManufacturerId, 
                 FlangeDistence = 16};
             LensMount M42 = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "M42", 
-                Manufacturer = FED, 
+                ManufacturerId = FED.ManufacturerId, 
                 FlangeDistence = 45.46};
             LensMount M39 = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "M39",
-                Manufacturer = FED, 
+                ManufacturerId = FED.ManufacturerId, 
                 FlangeDistence = 28.80};
             LensMount M = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "M", 
-                Manufacturer = Leica, 
+                ManufacturerId = Leica.ManufacturerId, 
                 FlangeDistence = 27.8};
             LensMount L = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "L",
-                Manufacturer = Leica, 
+                ManufacturerId = Leica.ManufacturerId, 
                 FlangeDistence = 20};
             LensMount R = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "R",
-                Manufacturer = Zeiss,
+                ManufacturerId = Zeiss.ManufacturerId,
                 FlangeDistence = 46};
             LensMount SA = new LensMount(){ LensMountId = LensMountIDCounter++,
                 Name = "SA", 
-                Manufacturer = Sigma, 
+                ManufacturerId = Sigma.ManufacturerId, 
                 FlangeDistence = 44};
             
             #endregion
@@ -427,6 +427,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Data
             });
 
 
+
             modelBuilder.Entity<Manufacturer>().HasData(
                 Canon,
                 Nikon,
@@ -435,19 +436,23 @@ namespace VTLP1J_ADT_2022_23_1.V2.Data
                 Tokina,
                 Leica
             );
-            /*
-            modelBuilder.Entity<LensMount>().HasData(
-                CanonMounts, 
-                NikonMounts, 
-                SigmaMounts, 
-                TamronMounts, 
-                TokinaMounts, 
-                LeicaMounts, 
-                ZeissMounts,
-                FEDMounts
-            );
             
-            */
+            modelBuilder.Entity<LensMount>().HasData( 
+                    FD, 
+                    EF,
+                    F,
+                    L, 
+                    M, 
+                    R, 
+                    EF_S,
+                    EF_M, 
+                    RF,
+                    M39,
+                    M42, 
+                    SA
+            );
+
+
             modelBuilder.Entity<Lens>().HasData(
                 
                 _35mm_f1_4_Di_VC_USD,

@@ -4,12 +4,21 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/rudasm/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/rudasm/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\mater\.nuget\packages\;D:\vs\components\NuGetPackages</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
     <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.4.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/home/rudasm/.nuget/packages/" />
+    <SourceRoot Include="C:\Users\mater\.nuget\packages\" />
+    <SourceRoot Include="D:\vs\components\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.1\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.1\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.sdk\1.0.0-alpha-20161104-2\build\Microsoft.NET.Sdk.props" Condition="Exists('$(NuGetPackageRoot)microsoft.net.sdk\1.0.0-alpha-20161104-2\build\Microsoft.NET.Sdk.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_NET_Sdk Condition=" '$(PkgMicrosoft_NET_Sdk)' == '' ">C:\Users\mater\.nuget\packages\microsoft.net.sdk\1.0.0-alpha-20161104-2</PkgMicrosoft_NET_Sdk>
+  </PropertyGroup>
 </Project>

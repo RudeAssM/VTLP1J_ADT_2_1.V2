@@ -20,7 +20,7 @@ namespace VTLP1J_ADT_2022_23_1.V2.Models
         public String Name { get; set; }
         
         [NotMapped] 
-        public DateOnly Established { get; set; }
+        public DateTime Established { get; set; }
         
         [Required]
         public String CountryOfOrigin { get; set; }

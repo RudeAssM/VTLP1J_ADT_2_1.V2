@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Data/VTLP1J_ADT_2022_23_1.V2.Data.csproj": {}
+    "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Data\\VTLP1J_ADT_2022_23_1.V2.Data.csproj": {}
   },
   "projects": {
-    "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Data/VTLP1J_ADT_2022_23_1.V2.Data.csproj": {
+    "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Data\\VTLP1J_ADT_2022_23_1.V2.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Data/VTLP1J_ADT_2022_23_1.V2.Data.csproj",
+        "projectUniqueName": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Data\\VTLP1J_ADT_2022_23_1.V2.Data.csproj",
         "projectName": "VTLP1J_ADT_2022_23_1.V2.Data",
-        "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Data/VTLP1J_ADT_2022_23_1.V2.Data.csproj",
-        "packagesPath": "/home/rudasm/.nuget/packages/",
-        "outputPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Data/obj/",
+        "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Data\\VTLP1J_ADT_2022_23_1.V2.Data.csproj",
+        "packagesPath": "C:\\Users\\mater\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\vs\\components\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rudasm/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mater\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
-                "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj"
+              "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
+                "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj"
               }
             }
           }
@@ -65,7 +71,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -74,26 +81,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
+    "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj",
+        "projectUniqueName": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj",
         "projectName": "VTLP1J_ADT_2022_23_1.V2.Models",
-        "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj",
-        "packagesPath": "/home/rudasm/.nuget/packages/",
-        "outputPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/obj/",
+        "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj",
+        "packagesPath": "C:\\Users\\mater\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\vs\\components\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/rudasm/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mater\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -117,7 +130,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -126,7 +140,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

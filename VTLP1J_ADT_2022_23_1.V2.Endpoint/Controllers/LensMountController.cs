@@ -10,12 +10,12 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
    
         [Route("api/[controller]")]
         [ApiController]
-        public class LensMountControllers : ControllerBase
+        public class LensMountController : ControllerBase
         {
             private ILensMountLogic LML;
             private IHubContext<SignalHub> hub;
             
-            public LensMountControllers(ILensMountLogic LML, IHubContext<SignalHub> hub)
+            public LensMountController(ILensMountLogic LML, IHubContext<SignalHub> hub)
             {
                 this.LML = LML;
                 this.hub = hub;

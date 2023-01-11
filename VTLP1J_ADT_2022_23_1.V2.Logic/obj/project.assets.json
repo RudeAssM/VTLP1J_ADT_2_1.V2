@@ -3643,35 +3643,42 @@
     ]
   },
   "packageFolders": {
-    "/home/rudasm/.nuget/packages/": {}
+    "C:\\Users\\mater\\.nuget\\packages\\": {},
+    "D:\\vs\\components\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Logic/VTLP1J_ADT_2022_23_1.V2.Logic.csproj",
+      "projectUniqueName": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Logic\\VTLP1J_ADT_2022_23_1.V2.Logic.csproj",
       "projectName": "VTLP1J_ADT_2022_23_1.V2.Logic",
-      "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Logic/VTLP1J_ADT_2022_23_1.V2.Logic.csproj",
-      "packagesPath": "/home/rudasm/.nuget/packages/",
-      "outputPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Logic/obj/",
+      "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Logic\\VTLP1J_ADT_2022_23_1.V2.Logic.csproj",
+      "packagesPath": "C:\\Users\\mater\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Logic\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\vs\\components\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/rudasm/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mater\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
-              "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Models/VTLP1J_ADT_2022_23_1.V2.Models.csproj"
+            "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj": {
+              "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Models\\VTLP1J_ADT_2022_23_1.V2.Models.csproj"
             },
-            "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Repository/VTLP1J_ADT_2022_23_1.V2.Repository.csproj": {
-              "projectPath": "/home/rudasm/Coding/C#/VTLP1J_ADT_23_1.V2/VTLP1J_ADT_2022_23_1.V2.Repository/VTLP1J_ADT_2022_23_1.V2.Repository.csproj"
+            "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Repository\\VTLP1J_ADT_2022_23_1.V2.Repository.csproj": {
+              "projectPath": "C:\\Users\\mater\\RiderProjects\\VTLP1J_ADT_2_1.V2\\VTLP1J_ADT_2022_23_1.V2.Repository\\VTLP1J_ADT_2022_23_1.V2.Repository.csproj"
             }
           }
         }
@@ -3691,7 +3698,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -3700,7 +3708,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.111/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

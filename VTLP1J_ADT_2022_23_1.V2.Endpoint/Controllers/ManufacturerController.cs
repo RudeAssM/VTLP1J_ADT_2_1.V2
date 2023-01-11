@@ -9,12 +9,12 @@ namespace VTLP1J_ADT_2022_23_1.V2.Endpoint.Controllers
 {
         [Route("api/[controller]")]
         [ApiController]
-        public class ManufacturerControllers : ControllerBase
+        public class ManufacturerController : ControllerBase
         {
             IManufacturerLogic ML;
             private IHubContext<SignalHub> hub;
        
-            public ManufacturerControllers(IManufacturerLogic ML, IHubContext<SignalHub> hub)
+            public ManufacturerController(IManufacturerLogic ML, IHubContext<SignalHub> hub)
             {
                 this.ML = ML;
                 this.hub = hub; 

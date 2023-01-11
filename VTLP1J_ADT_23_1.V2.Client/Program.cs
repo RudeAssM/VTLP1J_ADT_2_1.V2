@@ -13,6 +13,11 @@ namespace VTLP1J_ADT_23_1_V2.Client
             RestService restService = new RestService("http://localhost:5000");
 
             restService.Get<Lens>("api/Lens").ToProcess("this");
+            restService.Get<Manufacturer>("api/Manufacturer").ToProcess("this");
+            restService.Get<LensMount>("api/LensMount").ToProcess("this");
+
+
+            
 
         }
         public static void GetAllLenses(RestService restService)
@@ -30,14 +35,13 @@ namespace VTLP1J_ADT_23_1_V2.Client
     
     static class Extension
     {
-        public static void ToProcess<T>(this IEnumerable<T> query, string headline)
+        public static void ToProcess<T>(this IEnumerable<T> query, string title)
         {
-            Console.WriteLine($"\n:: {headline} ::\n");
-
+            Console.WriteLine(title);
             foreach (var item in query)
-                Console.WriteLine("\t" + item);
-
-            Console.WriteLine("\n\n");
+            {
+                Console.WriteLine(item.ToString());
+            }
         }
     }
 }
